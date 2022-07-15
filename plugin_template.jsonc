@@ -1,0 +1,43 @@
+
+{
+  "name": "mood",
+  "displayName": "Mood Tracker",
+  "pages": [
+    {
+      "name": "show",
+      "displayName": "View for date: ['base.dateRange(['base.today-7'],['base.today'])']",
+      "pageContent": {
+        "0": {
+          "height": 3,
+          "rowContent": [
+            ["self.components.moodGit()"]
+          ]
+        },
+        "1": {
+          "height": 2,
+          "rowContent": []
+        },
+        "2":  {
+          "height": 1,
+          "rowContent": [
+            ["base.button('Enter Data', ['to':self.pages['enterData']'])"]
+          ]
+        }
+      }
+    },
+    {
+      "name": "enterData",
+      "displayName": "Enter for date: ['base.dateRange()']",
+      "pageContent": {
+        // whatever da hec we wan'
+      } 
+    }
+  ]
+  , 
+  "components": [
+    {
+      "moodGit": "./moodGit.js",
+      "moodChoice": "./moodChoice.js"
+    }
+  ]
+}
