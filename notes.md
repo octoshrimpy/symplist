@@ -28,9 +28,11 @@
 
 ## TODO
 
-- [ ] row system
-- [ ] plugin parser
-- [ ] decide on /colou?rs/
-- [/] build base components
+- [ ] +honda +bek row system
+- [ ] +corm decide on /colou?rs/
+- [/] +octo build base components
   - @block: decide on /colou?rs/
-- [ ] learn svelte
+- [ ] +corm +honda +bek learn svelte
+- [ ] +diss plugin parser
+    - look into [JsChance](https://github.com/octoshrimpy/JSChance/blob/master/jschance.js) for parsing text/json into compileable code
+- [ ] +honda keep people motivated w/ maymays
