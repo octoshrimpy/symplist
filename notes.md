@@ -19,20 +19,41 @@
   * fibro
   * migraines
   * mood
-  * other
+  * calorie intake
+  * custom
 
 * making pages on-the-fly from within the app?
 * export plugins? (js/xml/json/cms/.plug)
 
 ---
 
+## Plugin system
+
+Each plugin will have an internal database for itself
+
+Each plugin will have a shared database that other plugins can read data from, if controlling plugin has granted access
+
+Each plugin will have a layouts file
+
+Each plugin will have a components folder, where custom components only available to the plugin will sit
+
+Each plugin will have access to the base components in the base app
+
+
+
+---
+
 ## TODO
 
-- [ ] +honda +bek row system
-- [ ] +corm decide on /colou?rs/
+- [ ] +octo decide on plugin system
 - [/] +octo build base components
-  - @block: decide on /colou?rs/
+    - @block: decide on /colou?rs/
+
+- [ ] +corm decide on /colou?rs/
 - [ ] +corm +honda +bek learn svelte
-- [ ] +diss plugin parser
-    - look into [JsChance](https://github.com/octoshrimpy/JSChance/blob/master/jschance.js) for parsing text/json into compileable code
+- [ ] +honda +bek row system
 - [ ] +honda keep people motivated w/ maymays
+
+- [/] +diss plugin parser
+    - @block: decide on plugin system
+    - look into [JsChance](https://github.com/octoshrimpy/JSChance/blob/master/jschance.js) for parsing text/json into compileable code

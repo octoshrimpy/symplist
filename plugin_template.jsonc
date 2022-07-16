@@ -1,43 +1,105 @@
-
-{
-  "name": "mood",
-  "displayName": "Mood Tracker",
-  "pages": [
-    {
-      "name": "show",
-      "displayName": "View for date: ['base.dateRange(['base.today-7'],['base.today'])']",
-      "pageContent": {
-        "0": {
-          "height": 3,
-          "rowContent": [
-            ["self.components.moodGit()"]
-          ]
-        },
-        "1": {
-          "height": 2,
-          "rowContent": []
-        },
-        "2":  {
-          "height": 1,
-          "rowContent": [
-            ["base.button('Enter Data', ['to':self.pages['enterData']'])"]
-          ]
+[
+  { // initial draft
+    "name": "mood",
+    "displayName": "Mood Tracker",
+    "pages": [
+      {
+        "name": "show",
+        "displayName": "View for date: ['base.dateRange(['base.today-7'],['base.today'])']",
+        "pageContent": {
+          "0": {
+            "height": 3,
+            "rowContent": [
+              ["self.components.moodGit()"]
+            ]
+          },
+          "1": {
+            "height": 2,
+            "rowContent": []
+          },
+          "2":  {
+            "height": 1,
+            "rowContent": [
+              ["base.button('Enter Data', ['to':self.pages['enterData']'])"]
+            ]
+          }
         }
+      },
+      {
+        "name": "enterData",
+        "displayName": "Enter for date: ['base.dateRange()']",
+        "pageContent": {
+          // whatever da hec we wan'
+        } 
       }
-    },
-    {
-      "name": "enterData",
-      "displayName": "Enter for date: ['base.dateRange()']",
-      "pageContent": {
-        // whatever da hec we wan'
-      } 
-    }
-  ]
-  , 
-  "components": [
-    {
-      "moodGit": "./moodGit.js",
-      "moodChoice": "./moodChoice.js"
-    }
-  ]
-}
+    ]
+    , 
+    "components": [
+      {
+        "moodGit": "./moodGit.js",
+        "moodChoice": "./moodChoice.js"
+      }
+    ]
+  },
+  // second pass
+  // assuming the content grid is 4 wide and 6 tall
+  { 
+    "name": "mood",
+    "displayName": "Mood Tracker",
+    "pages": [
+      {
+        "name": "show",
+        "displayName": "View data",
+        "pageContent": {
+          
+          "0": {
+            "height": 1,
+            "rowContent": []
+          },
+          "1": {
+            "height": 2,
+            "rowContent": [
+              {
+                "cellWidth": 4,
+                "cellContent": "self.components.moodGit()"
+              }
+            ]
+          },
+          "2": {
+            "height": 1,
+            "rowContent": []
+          },
+          "3":  {
+            "height": 1,
+            "rowContent": [
+              {"cellWidth": 1},
+              {
+                "cellWidth": 2,
+                "cellContent": "base.button('Enter Data', to:self.pages(mood.enterData))"
+              },
+              {"cellWidth": 1}
+            ]
+          },
+          "4": {
+            "height": 1,
+            "rowContent": []
+          }
+        }
+      },
+      {
+        "name": "enterData",
+        "displayName": "Enter data",
+        "pageContent": {
+          // whatever da hec we wan'
+        } 
+      }
+    ]
+    , 
+    "components": [
+      {
+        "moodGit": "./moodGit.js",
+        "moodChoice": "./moodChoice.js"
+      }
+    ]
+  }
+]
