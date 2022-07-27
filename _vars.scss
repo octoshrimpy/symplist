@@ -1,16 +1,36 @@
+/*
 default background color: #ede8f9, #d1c6f0 or #b2a1e8
 dark mode background color: #030033
 
-lighter
+lighter set
 #d1c6f0
 #c7d0f1
 #ace4f0
 #e6f1c4
 
-darker
+darker set
 #b2a1e8
 #a1b2e8
 #75d4e6
 #d5e89f
 #001633
 #1d0033
+*/
+
+// main colou?r palette, subject to change
+$main-dark3  : #a1b2e8;
+$main-dark2  : #75d4e6;
+$main-dark1  : #d5e89f;
+$main-medium : #ede8f9;
+$main-light1 : #d1c6f0;
+$main-light2 : #c7d0f1;
+$main-light3 : #ace4f0;
+
+// dark mode main colou?rs, subject to change
+$dark-dark3 : #aaa;
+$dark-dark2 : #aaa;
+$dark-dark1 : #aaa;
+$dark-medium : #030033;
+$dark-light1 : #aaa;
+$dark-light2 : #aaa;
+$dark-light3 : #aaa;
