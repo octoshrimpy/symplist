@@ -49,10 +49,12 @@ Each plugin will have access to the base components in the base app
 - [/] +octo build base components
     - @block: decide on /colou?rs/
 
-- [ ] +corm decide on /colou?rs/
-- [ ] +corm +honda +bek learn svelte
-- [ ] +honda +bek row system
-- [ ] +honda keep people motivated w/ maymays
+- [/] +corm decide on /colou?rs/
+- [/] +corm +honda +bek learn svelte
+- [ ] +corm +diss +bek learn jasonelle
+- [ ] +corm add wishlist.md
+- [ ] +corm finish figma
+- [ ] +honda(+corm +diss?) +bek row system
 
 - [/] +diss plugin parser
     - @block: decide on plugin system
