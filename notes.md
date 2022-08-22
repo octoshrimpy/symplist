@@ -53,7 +53,7 @@ Each plugin will have access to the base components in the base app
 - [/] +corm +honda +bek learn svelte
 - [ ] +corm +diss +bek learn jasonelle
 - [ ] +corm add wishlist.md
-- [ ] +corm finish figma
+- [ ] +corm finish [figma](https://www.figma.com/file/YDmOA3GG91JdF8CXNSNZYk/SympList-UI?node-id=0%3A1)
 - [ ] +honda(+corm +diss?) +bek row system
 
 - [/] +diss plugin parser
