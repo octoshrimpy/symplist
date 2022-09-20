@@ -4,6 +4,32 @@
 	<meta name="description" content="Svelte demo app" />
 </svelte:head>
 
+<!-- script added 9/20-->
+<script context='module'>
+    export async function load({ fetch }) {
+        const res = await fetch('/log-data/data.js'); 
+        const logs = await res.json();
+            
+        if (res.ok) {
+            return {
+                props: {
+                    logs
+                }
+            }
+        }
+
+        return {
+            status: res.status,
+            error: new Error('Could not fetch data')
+        }
+
+    }
+</script>
+<script>
+    export let logs
+</script>
+<!-- end of script -->
+
 <div class='wrapper'>
     <h1>
         Log Data
@@ -13,6 +39,13 @@
     <h5>Symptom Type:</h5>
     
     <div class='grid-container'>
+        <div>
+            <ul>
+                <li>
+                    <a sveltekit:prefetch href={`/log-data/${logs.id}`}>{logs.title}</a>
+                </li>
+            </ul>
+        </div>
     
             <div>
                 <span>symptom name</span>

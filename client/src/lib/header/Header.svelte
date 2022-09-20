@@ -30,8 +30,8 @@
 			<li class:active={$page.url.pathname === 'manage-plugins'}>
 				<a href='/manage-plugins'>Manage Plugins</a>
 			</li>
-			<li class:active={$page.url.pathname === 'export'}>
-				<a href='export'>Export</a>
+			<li class:active={$page.url.pathname === 'export-data'}>
+				<a href='export-data'>Export</a>
 			</li>
 			<li class:active={$page.url.pathname === '/'}>
 				<a href='/'>Log Out</a>
@@ -75,7 +75,7 @@
 	nav {
 		display: flex;
 		justify-content: center;
-		--background: #e89d9d49;
+		--background: #524747;
 	}
 
 	svg {

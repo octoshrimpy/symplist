@@ -1,5 +1,5 @@
 <script>
-
+	import header from 'C:/Users/Corinne/Desktop/symplist/client/src/images/symplest.svg'
 </script>
 
 <svelte:head>
@@ -10,7 +10,9 @@
 
 <section>
 	<h1>
-			Symplest
+		<a href="./home">
+			<img src={header} alt="Symplest" />
+		</a>
 	</h1>
 	<h2>
 		<button class='makinMyWayRoundTown'>
@@ -36,5 +38,9 @@
 	h1 {
 		width: 100%;
 		color: var(	--text-color);
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
 	}
 </style>

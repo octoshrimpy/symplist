@@ -9,12 +9,13 @@
 		Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 	--font-mono: 'Fira Mono', monospace;
 	--pure-white: #ffffff;
-	--primary-color: #2c1414;
-	--secondary-color: #18262e;
-	--tertiary-color: #070f0f;
+	--primary-color: #343232;
+	--secondary-color: #343232;
+	--tertiary-color: #343232;
 	--accent-color: #E89D9D;
-	--heading-color: #52819C;
-	--text-color: #b9b9b9;
+	--heading-color: #C69F9F;
+	--text-color: #C69F9F;
+	--button-color: #524747;
 	--background-without-opacity: rgba(17, 5, 5, 0.7);
 	--column-width: 42rem;
 	--column-margin-top: 4rem;
@@ -24,12 +25,6 @@ body {
 	min-height: 100vh;
 	margin: 0;
 	background-color: var(--primary-color);
-	background: linear-gradient(
-		180deg,
-		var(--primary-color) 0%,
-		var(--secondary-color) 10.45%,
-		var(--tertiary-color) 41.35%
-	);
 }
 
 body::before {
@@ -101,8 +96,11 @@ button:focus:not(:focus-visible) {
 .makinMyWayRoundTown{
 	width: 15rem;
 	border-radius: var(--radius-4);
-	border: 1px solid rgba(255, 255, 255, 0.178);
-	background: #178eb3;
+	border: 1px solid var(--text-color);
+	background: var(--button-color);
+}
+.makinMyWayRoundTown::hover{
+	border: 1px solid var(--accent-color);
 }
 
 @media (min-width: 720px) {

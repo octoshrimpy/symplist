@@ -29,10 +29,8 @@ h1 {
 }
 
 form *{
-    border-radius: 10px;
     display: grid;
     place-items: center;
     text-align: center;
 }
-
 </style>
